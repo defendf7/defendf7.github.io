@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Ferdz",
+    "motivations": "My motivation for becoming a DREP is rooted from my values of decentralization and community empowerment.  The role offers a unique opportunity to advocate for collective interests while contributing to a pioneering blockchain technology that prioritizes inclusivity and fairness.  I am committed to being a voice for my delegators in ensuring that they are heard and represented, integrating it to the collective decision-making of the entire Cardano community.\nMoreover, decentralization as a cornerstone of the Cardano ecosytem, contributes to its resiliency.  It becomes a protection against the potential risks of a single entity having undue influence over the network, thereby reinforcing the idea that decentralization is a practical necessity for the long-term sustainability of Cardano.\n",
+    "objectives": "My objectives as a DREP are:  (1) To engage community and (2) To advocate decentralization. \nFirst, I will actively engage with my delegators and provide a platform for open dialogue.  By fostering conversations about governance, funding and development priorities, I hope to encourage collaboration and innovation within the Cardano ecosystem.\nSecond, I will advocate further for decentralization.  I am committed to the principle that decentralization empowers individuals, giving them a stake in decision-making processes that affect the Cardano network.  Advocating includes educating my delegators about the intricacies of the Cardano governance model and the importance of their continued involvement.  I aim to empower delegators in making informed choices about the future of Cardano.  I am passionate on the idea of a decentralized ecosystem where every participant feels valued. ",
+    "paymentAddress": "addr1qx87p295gw93u08704getpsd0046lsupd0f37vma44y32lwmhv5jwvfswv5x0xx3ugelge85px39j9jrmdhrrcuzkv7qrqylhf",
+    "qualifications": "SPO of FRUIT Stake Pool, Computer Engineering degree, DEFI enthusiast, +5 years active involvement in the Cardano ecosystem",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Label",
+        "uri": "https://x.com/ferdzf7"
+      },
+      {
+        "@type": "Identity",
+        "label": "Label",
+        "uri": "https://fruitp.net/ferdz-and-becoming-cardano-spo"
+      }
+    ]
+  }
+}
